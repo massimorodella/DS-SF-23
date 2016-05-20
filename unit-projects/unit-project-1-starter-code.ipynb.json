@@ -34,6 +34,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "Which free-tier customers will convert to paying customers."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 2. What are the predictors/covariates?"
    ]
   },
@@ -42,6 +49,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Age, gender, location, profession, days since last log in."
    ]
   },
   {
@@ -62,6 +76,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "January - April 2015"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 4. What is the hypothesis?"
    ]
   },
@@ -70,6 +91,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Demographic and information about customer usage data will allow us to predict if free-tier customers will convert to paying customers."
    ]
   },
   {
@@ -134,6 +162,18 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "Variable | Description | Type of Variable\n",
+    "---|---|---\n",
+    "admit | 0 = Not thing, 1 = Thing | Categorical\n",
+    "GRE | Thing in unit X | Continuous\n",
+    "GPA | Float | Continuous\n",
+    "prestige | 1 = Not Presigious, 2 = Little Pretigious, 3 = Prestige, 4 = High Prestige | Categorical"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 2. What is the outcome?"
    ]
   },
@@ -142,6 +182,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Weither the student was admitted or not."
    ]
   },
   {
@@ -162,6 +209,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "The GRE, GPA and prestige."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 4. What timeframe is this data relevent for?"
    ]
   },
@@ -176,6 +230,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "We don't know."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 4. What is the hypothesis?"
    ]
   },
@@ -184,6 +245,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The GRE, GPA and prestige will help us predict acceptance's student."
    ]
   },
   {
@@ -205,6 +273,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Determine if a student will be accepted to UCLA regarding his GRE score, GPA and the prestige of his high school."
    ]
   },
   {
@@ -241,6 +316,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "The goals of the exploratory analysis is to analyse data sets to summarize their main characteristics."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 2a. What are the assumptions of the distribution of data?"
    ]
   },
@@ -249,6 +331,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The assumptions of the distribution of data are normal."
    ]
   },
   {
@@ -271,6 +360,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "The mean and the standard deviation."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 3a. How might outliers impact your analysis?"
    ]
   },
@@ -287,6 +383,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "Outliers might impact the analysis by modifying the mean and the ditribution of the data and so, the result of it."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 3b. How will you test for outliers?"
    ]
   },
@@ -295,6 +398,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "By using boxplots and histograms"
    ]
   },
   {
@@ -317,6 +427,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
+    "Collinearity refers to a linear relationship between two explanatory variables."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
     "#### 4b. How will you test for colinearity?"
    ]
   },
@@ -325,6 +442,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "By using linear regression."
    ]
   },
   {
@@ -340,6 +464,13 @@
    "metadata": {},
    "source": [
     "Answer:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "We will use the SMART Framework. First, we will be looking at the GRE, GPA and the prestige of the high school for every student who wants to apply at UCLA. Second, we will try to predict if a student will be accepted to UCLA regarding his GRE, GPA and the prestige of his high school. Third, the data set is not likely to be biased. And finally, we will get the data regarding the GRE, GPA and the prestige of the high school for every student applying at UCLA for an approximate period of one year (let's assume that's the time every student needs to make the transition from high school to university)."
    ]
   },
   {
@@ -369,7 +500,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython2",
-   "version": "2.7.10"
+   "version": "2.7.11"
   }
  },
  "nbformat": 4,
